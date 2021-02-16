@@ -2,6 +2,8 @@
 
 
 
+
+
 ### 환경
 
 * Windows 10 Pro
@@ -16,6 +18,8 @@
 * yolo v3
 * yolo mark
 * jupyter notebook
+
+
 
 
 
@@ -58,13 +62,17 @@ yolo_mark는 이미지에 bounding box 즉, 좌표값과 라벨링을 하여 학
 
 yolo-obj.cfg파일 수정
 
-  ![그림입니다.  원본 그림의 이름: CLP00003b8054d3.bmp  원본 그림의 크기: 가로 239pixel, 세로 275pixel](file:///C:\Users\user\AppData\Local\Temp\tmp6726.jpg)  
 
-  ![그림입니다.  원본 그림의 이름: CLP00003b800001.bmp  원본 그림의 크기: 가로 770pixel, 세로 189pixel](file:///C:\Users\user\AppData\Local\Temp\tmp7F09.jpg)  
+
+![test1](C:\Users\user\Desktop\image1.png)
+
+  ![test2](C:\Users\user\Desktop\image2.png)  
 
 * batch-size 64장
 * subdivision 16장
 * 분류해야할 라벨 총 3개(차, 오토바이, 사람)이므로 classes를 3으로 수정
+
+
 
 
 
@@ -79,6 +87,8 @@ obj.data파일 수정
 
 
 
+
+
 obj.names파일 수정
 
   ![그림입니다.  원본 그림의 이름: CLP00003b800003.bmp  원본 그림의 크기: 가로 224pixel, 세로 97pixel](file:///C:\Users\user\AppData\Local\Temp\tmp5297.jpg)  
@@ -86,6 +96,8 @@ obj.names파일 수정
 
 
 * 차, 오토바이, 사람에 대한 이름을 위와 같이 정의
+
+
 
 
 
