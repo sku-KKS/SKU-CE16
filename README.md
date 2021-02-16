@@ -1,6 +1,4 @@
-# SKU-CE16
-
-
+# SKU-CE16  
 
 
 
@@ -17,9 +15,9 @@
 * darknet
 * yolo v3
 * yolo mark
-* jupyter notebook
+* jupyter notebook  
 
-
+  
 
 
 
@@ -33,17 +31,17 @@ yolo_mark는 이미지에 bounding box 즉, 좌표값과 라벨링을 하여 학
 
 하지만 이미지 하나하나 라벨링 하기에는 비효율적이라 생각하여, 제공받은 json파일에 있는 
 
-좌표값과 라벨링이 있기 때문에 이점을 이용하였습니다.
+좌표값과 라벨링이 있기 때문에 이점을 이용하였습니다.  
 
 
 
-* json파일을 yolo의 input인 txt형식에 맞게 변환 (학습 데이터 형성)
+* json파일을 yolo의 input인 txt형식에 맞게 변환 (학습 데이터 형성)  
+
+  
 
 
 
-
-
-### 학습을 위한 준비
+### 학습을 위한 준비  
 
 
 
@@ -54,9 +52,7 @@ yolo_mark는 이미지에 bounding box 즉, 좌표값과 라벨링을 하여 학
 * 학습 이미지 경로들이 담긴 txt파일 (train.txt, valid.txt)
 * 클래스의 종류가 담긴 name파일 (obj.names)
 * 경로들을 담고있는 data파일(obj.data)
-* 학습시킨 가중치 정보가 들어있는 weights파일
-
-
+* 학습시킨 가중치 정보가 들어있는 weights파일  
 
 
 
@@ -64,40 +60,40 @@ yolo-obj.cfg파일 수정
 
 
 
-![yolo-obj.cfg file1](./image/image1.png)
+![yolo-obj.cfg file1](./image/image1.png)    
 
-![yolo-obj.cfg fil2](./image/image2.png)
+
+
+![yolo-obj.cfg fil2](./image/image2.png)    
+
+
 
 * batch-size 64장
 * subdivision 16장
-* 분류해야할 라벨 총 3개(차, 오토바이, 사람)이므로 classes를 3으로 수정
-
-
+* 분류해야할 라벨 총 3개(차, 오토바이, 사람)이므로 classes를 3으로 수정  
 
 
 
 obj.data파일 수정
 
-  ![그림입니다.  원본 그림의 이름: CLP00003b800004.bmp  원본 그림의 크기: 가로 309pixel, 세로 176pixel](file:///C:\Users\user\AppData\Local\Temp\tmp3365.jpg)  
+![obj.data file](./image/image3.png)    
 
 
 
 * 3개의 종류로 분류를 하기 때문에 classes를 3으로 수정
-* train, valid, names, backup 의 경로를 지정
-
-
+* train, valid, names, backup 의 경로를 지정  
 
 
 
 obj.names파일 수정
 
-  ![그림입니다.  원본 그림의 이름: CLP00003b800003.bmp  원본 그림의 크기: 가로 224pixel, 세로 97pixel](file:///C:\Users\user\AppData\Local\Temp\tmp5297.jpg)  
+![ojb.names file](./image/image4.png)    
 
 
 
-* 차, 오토바이, 사람에 대한 이름을 위와 같이 정의
+* 차, 오토바이, 사람에 대한 이름을 위와 같이 정의  
 
-
+  
 
 
 
@@ -105,7 +101,7 @@ obj.names파일 수정
 
 학습을 위해서 darknet을 사용했습니다. darknet의 학습은 CPU 와 GPU 2가지 방식이 있습니다.
 
-그 중 **GPU를 사용해서 학습**했습니다.
+그 중 **GPU를 사용해서 학습**했습니다.  
 
 
 
