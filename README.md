@@ -64,9 +64,9 @@ yolo-obj.cfg파일 수정
 
 
 
-![test1](C:\Users\user\Desktop\image1.png)
+![yolo-obj.cfg file1](./image/image1.png)
 
-  ![test2](C:\Users\user\Desktop\image2.png)  
+![yolo-obj.cfg fil2](./image/image2.png)
 
 * batch-size 64장
 * subdivision 16장
