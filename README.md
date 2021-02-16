@@ -56,7 +56,7 @@ yolo_mark는 이미지에 bounding box 즉, 좌표값과 라벨링을 하여 학
 
 
 
-yolo-obj.cfg파일 수정
+yolo-obj.cfg파일 작성
 
 
 
@@ -70,22 +70,22 @@ yolo-obj.cfg파일 수정
 
 * batch-size 64장
 * subdivision 16장
-* 분류해야할 라벨 총 3개(차, 오토바이, 사람)이므로 classes를 3으로 수정  
+* 분류해야할 라벨 총 3개(차, 오토바이, 사람)이므로 classes를 3으로 작성
 
 
 
-obj.data파일 수정
+obj.data파일 작성
 
 ![obj.data file](./image/image3.png)    
 
 
 
-* 3개의 종류로 분류를 하기 때문에 classes를 3으로 수정
+* 3개의 종류로 분류를 하기 때문에 classes를 3으로 작성
 * train, valid, names, backup 의 경로를 지정  
 
 
 
-obj.names파일 수정
+obj.names파일 작성
 
 ![ojb.names file](./image/image4.png)    
 
